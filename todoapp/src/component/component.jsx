@@ -24,9 +24,7 @@ constructor(){
         
         }
         let resetCounter=()=>{
-            this.setState(prevState=>{
-                return {count:0}
-            });
+            this.setState({count:0});
         
         }
         
@@ -40,7 +38,7 @@ constructor(){
                 <div>
                     <button onClick={()=>incrementCount()}>+</button>
                     <button onClick={()=>decrementCount()}>-</button>
-                    <button onClick={resetCounter()}>Reset</button>
+                    <button onClick={resetCounter}>Reset</button>
                 </div>
             </div>
         )
